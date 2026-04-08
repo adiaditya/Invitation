@@ -1,0 +1,394 @@
+<!DOCTYPE html>  
+  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Retirement Invitation - K. Srinivas</title>  
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Lora:ital@0;1&display=swap" rel="stylesheet">  
+    <style>  
+        * {  
+            margin: 0;  
+            padding: 0;  
+            box-sizing: border-box;  
+        }  
+  
+```  
+    body {  
+        font-family: 'Lora', serif;  
+        background: linear-gradient(135deg, #f5f1e8 0%, #e8e0d5 100%);  
+        min-height: 100vh;  
+        display: flex;  
+        align-items: center;  
+        justify-content: center;  
+        padding: 20px;  
+    }  
+  
+    .invitation-container {  
+        background: #faf8f3;  
+        width: 100%;  
+        max-width: 700px;  
+        padding: 60px 40px;  
+        border: 3px solid #a0826d;  
+        border-radius: 2px;  
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);  
+        position: relative;  
+        overflow: hidden;  
+        animation: fadeIn 0.8s ease-out;  
+    }  
+  
+    .invitation-container::before {  
+        content: '';  
+        position: absolute;  
+        top: 0;  
+        left: 0;  
+        right: 0;  
+        height: 2px;  
+        background: repeating-linear-gradient(90deg, #a0826d 0px, #a0826d 15px, transparent 15px, transparent 30px);  
+    }  
+  
+    .invitation-container::after {  
+        content: '';  
+        position: absolute;  
+        bottom: 0;  
+        left: 0;  
+        right: 0;  
+        height: 2px;  
+        background: repeating-linear-gradient(90deg, #a0826d 0px, #a0826d 15px, transparent 15px, transparent 30px);  
+    }  
+  
+    @keyframes fadeIn {  
+        from {  
+            opacity: 0;  
+            transform: translateY(20px);  
+        }  
+        to {  
+            opacity: 1;  
+            transform: translateY(0);  
+        }  
+    }  
+  
+    .logo-section {  
+        text-align: center;  
+        margin-bottom: 35px;  
+        animation: slideDown 0.8s ease-out 0.2s both;  
+    }  
+  
+    @keyframes slideDown {  
+        from {  
+            opacity: 0;  
+            transform: translateY(-20px);  
+        }  
+        to {  
+            opacity: 1;  
+            transform: translateY(0);  
+        }  
+    }  
+  
+    .logo {  
+        width: 120px;  
+        height: 120px;  
+        background: #c41e3a;  
+        border-radius: 50%;  
+        display: flex;  
+        align-items: center;  
+        justify-content: center;  
+        margin: 0 auto 20px;  
+        color: white;  
+        font-size: 48px;  
+        font-weight: bold;  
+        box-shadow: 0 8px 20px rgba(196, 30, 58, 0.3);  
+    }  
+  
+    .title {  
+        font-family: 'Playfair Display', serif;  
+        font-size: 42px;  
+        color: #2c2c2c;  
+        font-style: italic;  
+        margin: 20px 0;  
+        text-align: center;  
+        letter-spacing: 1px;  
+    }  
+  
+    .divider {  
+        height: 1px;  
+        background: #a0826d;  
+        margin: 25px 0;  
+        position: relative;  
+    }  
+  
+    .divider::after {  
+        content: '🚂';  
+        position: absolute;  
+        left: 50%;  
+        top: 50%;  
+        transform: translate(-50%, -50%);  
+        background: #faf8f3;  
+        padding: 0 10px;  
+        font-size: 20px;  
+    }  
+  
+    .intro-text {  
+        text-align: center;  
+        font-size: 18px;  
+        color: #4a4a4a;  
+        line-height: 1.8;  
+        margin-bottom: 30px;  
+        font-style: italic;  
+        animation: fadeIn 0.8s ease-out 0.4s both;  
+    }  
+  
+    .honoree-name {  
+        font-family: 'Playfair Display', serif;  
+        font-size: 48px;  
+        color: #2c2c2c;  
+        text-align: center;  
+        margin: 25px 0 15px;  
+        font-weight: bold;  
+        animation: fadeIn 0.8s ease-out 0.5s both;  
+    }  
+  
+    .position {  
+        text-align: center;  
+        font-size: 16px;  
+        color: #666;  
+        letter-spacing: 2px;  
+        margin-bottom: 20px;  
+        animation: fadeIn 0.8s ease-out 0.6s both;  
+    }  
+  
+    .service-details {  
+        text-align: center;  
+        font-size: 17px;  
+        color: #555;  
+        line-height: 1.8;  
+        margin-bottom: 35px;  
+        animation: fadeIn 0.8s ease-out 0.7s both;  
+    }  
+  
+    .details-section {  
+        background: #f0e8de;  
+        padding: 30px;  
+        border-radius: 3px;  
+        margin: 30px 0;  
+        animation: fadeIn 0.8s ease-out 0.8s both;  
+    }  
+  
+    .detail-item {  
+        display: flex;  
+        align-items: flex-start;  
+        margin-bottom: 20px;  
+        gap: 15px;  
+    }  
+  
+    .detail-item:last-child {  
+        margin-bottom: 0;  
+    }  
+  
+    .detail-icon {  
+        font-size: 28px;  
+        flex-shrink: 0;  
+        width: 40px;  
+        text-align: center;  
+    }  
+  
+    .detail-content {  
+        flex: 1;  
+    }  
+  
+    .detail-label {  
+        font-weight: bold;  
+        color: #2c2c2c;  
+        font-size: 18px;  
+        margin-bottom: 5px;  
+    }  
+  
+    .detail-text {  
+        color: #555;  
+        font-size: 16px;  
+        line-height: 1.6;  
+    }  
+  
+    .maps-button {  
+        display: inline-flex;  
+        align-items: center;  
+        gap: 10px;  
+        background: linear-gradient(135deg, #4285f4 0%, #3367d6 100%);  
+        color: white;  
+        padding: 12px 24px;  
+        text-decoration: none;  
+        border-radius: 4px;  
+        font-weight: 600;  
+        font-size: 15px;  
+        margin-top: 12px;  
+        transition: all 0.3s ease;  
+        box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);  
+        cursor: pointer;  
+        border: none;  
+        font-family: 'Lora', serif;  
+    }  
+  
+    .maps-button:hover {  
+        transform: translateY(-2px);  
+        box-shadow: 0 6px 16px rgba(66, 133, 244, 0.4);  
+        background: linear-gradient(135deg, #3367d6 0%, #2850c5 100%);  
+    }  
+  
+    .maps-button:active {  
+        transform: translateY(0);  
+    }  
+  
+    .closing-text {  
+        text-align: center;  
+        font-size: 18px;  
+        color: #4a4a4a;  
+        line-height: 1.8;  
+        margin: 40px 0 30px;  
+        font-style: italic;  
+        animation: fadeIn 0.8s ease-out 0.9s both;  
+    }  
+  
+    .signature {  
+        text-align: center;  
+        animation: fadeIn 0.8s ease-out 1s both;  
+    }  
+  
+    .signature-from {  
+        font-size: 16px;  
+        color: #666;  
+        margin-bottom: 10px;  
+    }  
+  
+    .signature-names {  
+        font-family: 'Playfair Display', serif;  
+        font-size: 28px;  
+        color: #2c2c2c;  
+        font-weight: bold;  
+    }  
+  
+    @media (max-width: 600px) {  
+        .invitation-container {  
+            padding: 40px 25px;  
+        }  
+  
+        .title {  
+            font-size: 32px;  
+        }  
+  
+        .honoree-name {  
+            font-size: 36px;  
+        }  
+  
+        .logo {  
+            width: 100px;  
+            height: 100px;  
+            font-size: 40px;  
+        }  
+  
+        .intro-text {  
+            font-size: 16px;  
+        }  
+  
+        .detail-item {  
+            flex-direction: column;  
+            align-items: center;  
+            text-align: center;  
+        }  
+  
+        .detail-icon {  
+            width: auto;  
+        }  
+    }  
+  
+    /* Print styles */  
+    @media print {  
+        body {  
+            background: white;  
+        }  
+  
+        .invitation-container {  
+            box-shadow: none;  
+            max-width: 100%;  
+        }  
+    }  
+</style>  
+```  
+  
+</head>  
+<body>  
+    <div class="invitation-container">  
+        <div class="logo-section">  
+            <div class="logo">🚂</div>  
+        </div>  
+  
+```  
+    <h1 class="title">Retirement Invitation</h1>  
+      
+    <div class="divider"></div>  
+  
+    <p class="intro-text">  
+        With immense gratitude and pride,<br>  
+        we cordially invite you in celebrating  
+    </p>  
+  
+    <h2 style="text-align: center; font-family: 'Playfair Display', serif; font-size: 26px; color: #2c2c2c; margin: 25px 0 20px; font-style: italic;">  
+        the retirement of our beloved father  
+    </h2>  
+  
+    <h2 class="honoree-name">K. Srinivas</h2>  
+      
+    <div class="position">(Chief Ticket Inspector – CTI)</div>  
+  
+    <p class="service-details">  
+        After completing 36 years of service with South Central Railways  
+    </p>  
+  
+    <div class="details-section">  
+        <div class="detail-item">  
+            <div class="detail-icon">📅</div>  
+            <div class="detail-content">  
+                <div class="detail-label">Date</div>  
+                <div class="detail-text">April 27, 2025</div>  
+            </div>  
+        </div>  
+  
+        <div class="detail-item">  
+            <div class="detail-icon">⏰</div>  
+            <div class="detail-content">  
+                <div class="detail-label">Time</div>  
+                <div class="detail-text">11:00 AM onwards</div>  
+            </div>  
+        </div>  
+  
+        <div class="detail-item">  
+            <div class="detail-icon">📍</div>  
+            <div class="detail-content">  
+                <div class="detail-label">Venue</div>  
+                <div class="detail-text">  
+                    Railway Function Hall<br>  
+                    Railway Colony, Moula-Ali<br>  
+                    Prashant Nagar, Hyderabad – 500040  
+                </div>  
+                <a href="https://maps.google.com/?q=17.4444180,78.5452774"   
+                   target="_blank"   
+                   class="maps-button">  
+                    📍 View on Google Maps  
+                </a>  
+            </div>  
+        </div>  
+    </div>  
+  
+    <p class="closing-text">  
+        Kindly grace the occasion with your presence<br>  
+        as we honor his remarkable journey and service.  
+    </p>  
+  
+    <div class="signature">  
+        <p class="signature-from">From,</p>  
+        <p class="signature-names">Shruthi & Shreya</p>  
+    </div>  
+</div>  
+```  
+  
+</body>  
+</html>  
